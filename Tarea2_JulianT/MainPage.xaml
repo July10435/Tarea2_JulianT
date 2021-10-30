@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea2_JulianT.MainPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Notas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label x:Name="lblUsuario"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Seguimiento 1" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtS1" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="Examen 1" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtE1" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="Parcial 1" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtPa1" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Seguimiento 2" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtS2" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="Examen 2" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtE2" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="Parcial 2" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtPa2" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nota Final" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtNf" IsReadOnly="True" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="Estado" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtEstado" IsReadOnly="True" Grid.Row="1" Grid.Column="1"/>
+        </Grid>
+
+        <Button x:Name="btnSuma" Text="Resultados" Clicked="btnSuma_Clicked"/>
+        
+    </StackLayout>
+
+</ContentPage>
